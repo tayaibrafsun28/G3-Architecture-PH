@@ -27,7 +27,7 @@
 .btn-style {
   background-color: #ff900e;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   border-radius: 8px;
   border: none;
@@ -53,10 +53,44 @@
 .dark3 {
   color: #727272;
 }
-.navbar, .hero {
+
+.orange {
+  color: #ff900e;
+}
+
+/* Combaind width padding margin */
+.navbar,
+.hero,
+#our-features,
+#specialities {
   width: 75%;
   margin: 0 auto;
   padding: 2% 0;
+}
+
+.hero,
+.features-wrapper,
+.specialities-wrapper {
+  padding: 2.5% 0;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero-description p,
+.features-content p {
+  text-align: center;
+  line-height: 26px;
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--dark3);
+}
+
+#header .navbar .nav-logo h2,
+.features-content h2,
+.specialities-content h2 {
+  font-size: 2.5rem;
+  color: var(--dark1);
 }
 
 /* Indivisual Styles */
@@ -77,37 +111,78 @@
 .navbar ul li a {
   text-decoration: none;
   color: var(--dark2);
-  font-size: 18px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
-.navbar .nav-logo {
-  font-size: 24px;
-  color: var(--dark1);
-}
-
-.hero{
-    padding: 3% 0;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-}
-
 .hero .hero-title h1 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
   color: var(--dark1);
 }
 
-.hero .hero-description p {
-  text-align: center;
-  line-height: 26px;
-  font-weight: 200;
-  color: var(--dark3);
+.hero .hero-banner img {
+  width: 100%;
+  padding: 1.5% 0 0;
 }
 
-.hero .hero-banner img {
-  width:100%;
-  padding: 1.5% 0 0;
+#our-features {
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.features-content p {
+  text-align: start;
+  padding: 0 10% 0 0;
+}
+
+.features-content {
+  gap: 25px;
+  margin-left: 2.5%;
+}
+
+.features-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: none;
+  border-radius: 8px;
+  gap: 25px;
+}
+
+.specialities-card {
+  border: none;
+  border-radius: 8px;
+  gap: 9px;
+  padding: 36px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.specialities-content p {
+  margin-bottom: 15px;
+}
+.specialities-content {
+  gap: 15px;
+}
+
+.specialities-img {
+  padding-left: 80px;
+}
+
+.badge {
+  background-color: #ff900e;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  padding: 20px 24px;
+  width: 342px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -130px;
+  left: -60px;
 }
